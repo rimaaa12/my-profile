@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="controle.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action=" ajout.php" method="post"> <fieldset>
+        <legend> Ajout d'in employé</legend>
+        <table>
+            <tr>
+                <td><label for=""> cin :</label></td>
+                <td> <input type="text" name="cin" id="cin"></td>
+            </tr>
+            <tr>
+                <td><label for=""> Nom et prenom :</label></td>
+                <td> <input type="text" name="np" id="np"></td>
+            </tr>
+            <tr>
+                <td>Date de naissance :</td>
+                <td> <input type="date" name="dn" id="dn"></td>
+            </tr>
+            <tr>
+                <td><label for=""> telephone</label></td>
+                <td> <input type="tel" id="tel" name="tel"></td>
+            </tr>
+            <tr>
+                <td><label for=""> email</label></td>
+                <td> <input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for=""> sexe</label></td>
+                <td> <input type="radio"  name="r" id="r1"> Homme
+                    <input type="radio" name="r" id="r2"> Femme
+                </td>
+            </tr>
+            <tr>
+                <td>dipolome :</td>
+                <td> <select name="lst" id="lst">
+                    <option value="">
+                        choisir un diplome
+                    </option>
+                    <option value="">Ingenieur</option>
+                    <option value="">Maitrise</option>
+                    <option value="">Technicien sup</option>
+                    <option value="">Technicien</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for=""> Anciennneté dans d'autres services</label></td>
+                <td><input type="text" name="anc" id="anc"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Valider" onsubmit="return verif1()">
+                    <input type="reset" value="Annuler"></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </table>
+ </fieldset></form>
+    
+</body>
+</html>
